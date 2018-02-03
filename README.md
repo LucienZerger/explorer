@@ -1,24 +1,13 @@
-Iquidus Explorer - 1.6.1
+Strayacoin Explorer - Based on Iquidus Explorer 1.6.1
 ================
 
 An open source block explorer written in node.js.
-
-### See it in action
-
-*  [Jumbucks](http://explorer.getjumbucks.com)
-*  [Sphere](http://sphere.iquidus.io)
-*  [SAR](http://explorer.sarcoin.info)
-*  [Vanillacoin](https://blockchain.vanillacoin.net/)
-*  [Neoscoin](http://explorer.infernopool.com/)  
-*  [C2Chain](http://c2chain.info/)
-
-*note: If you would like your instance mentioned here contact me*
 
 ### Requires
 
 *  node.js >= 0.10.28
 *  mongodb 2.6.x
-*  *coind
+*  strayacoind
 
 ### Create database
 
@@ -36,11 +25,11 @@ Create user with read/write access:
 
 *note: If you're using mongo shell 2.4.x, use the following to create your user:
 
-    > db.addUser( { user: "username", pwd: "password", roles: [ "readWrite"] })
+    > db.addUser( { user: "iquidus", pwd: "3xp!0reR", roles: [ "readWrite"] })
 
 ### Get the source
 
-    git clone https://github.com/iquidus/explorer explorer
+    git clone https://github.com/MxBlu/explorer explorer
 
 ### Install node modules
 
@@ -50,7 +39,11 @@ Create user with read/write access:
 
     cp ./settings.json.template ./settings.json
 
-*Make required changes in settings.json*
+Modify settings.json to change the follow:
+ - Address to the address of the explorer
+ - Port to the port you want to run the explorer on
+ - dbsettings if you have different MongoDB settings
+ - Wallet settings
 
 ### Start Explorer
 
@@ -105,6 +98,8 @@ Iquidus Explorer is intended to be generic so it can be used with any wallet fol
     -daemon -txindex
 
 ### Donate
+
+Links to Iquidus' Donation addresses:
 
     BTC: 168hdKA3fkccPtkxnX8hBrsxNubvk4udJi
     JBS: JZp9893FMmrm1681bDuJBU7c6w11kyEY7D

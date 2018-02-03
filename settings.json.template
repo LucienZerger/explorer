@@ -5,28 +5,28 @@
 */
 {
   // name your instance!
-  "title": "IQUIDUS",
+  "title": "Outback Explorer",
 
   "address": "127.0.0.1:3001",
 
   // coin name
-  "coin": "Darkcoin",
+  "coin": "StrayaCoin",
 
   // coin symbol
-  "symbol": "DRK",
+  "symbol": "NAH",
 
   // logo
   "logo": "/images/logo.png",
 
   // favicon
-  "favicon": "public/favicon.ico",
+  "favicon": "public/favicon-2.ico",
 
   // Uses bootswatch themes (http://bootswatch.com/)
   // Valid options:
   //     Cerulean, Cosmo, Cyborg, Darkly, Flatly, Journal, Lumen, Paper,
   //     Readable, Sandstone, Simplex, Slate, Spacelab, Superhero, United, Yeti
   // theme (see /public/themes for available themes)
-  "theme": "Cyborg",
+  "theme": "Superhero",
 
   // port to listen for requests on.
   "port" : 3001,
@@ -47,13 +47,13 @@
   // wallet settings
   "wallet": {
     "host": "localhost",
-    "port": 9332,
-    "user": "darkcoinrpc",
-    "pass": "123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
+    "port": 9432,
+    "user": "rpcuser",
+    "pass": "rpcpassword"
   },
 
   // confirmations
-  "confirmations": 40,
+  "confirmations": 6,
 
   // language settings
   "locale": "locale/en.json",
@@ -61,7 +61,7 @@
   // menu settings
   "display": {
     "api": true,
-    "markets": true,
+    "markets": false,
     "richlist": true,
     "twitter": true,
     "facebook": false,
@@ -80,10 +80,10 @@
 
   // ensure links on API page are valid
   "api": {
-    "blockindex": 1337,
-    "blockhash": "1733320247b15ca2262be646397d1ffd6be953fa638ebb8f5dcbb4c2b91b34f1",
-    "txhash": "f270cd3813254c9922a2e222a56ba745842d9112223a1394062e460b33d27b7e",
-    "address": "RBiXWscC63Jdn1GfDtRj8hgv4Q6Zppvpwb"
+    "blockindex": 2,
+    "blockhash": "700d52c572deab191264ccf5a607ac1889ca734f6f2d12a074ac07f3ce5cd5e0",
+    "txhash": "20eee6599cbc22f33d9a9d7288450460ffe8341b5379d57aa3166595f5afe93b",
+    "address": "Sf9iCzEcUMnSgrX9o9VB2uZYWu93JoATDN"
   },
 
   // market settings
@@ -120,8 +120,8 @@
   "googleplus": "yourgooglepluspage",
 
   //genesis
-  "genesis_tx": "65f705d2f385dc85763a317b3ec000063003d6b039546af5d8195a5ec27ae410",
-  "genesis_block": "b2926a56ca64e0cd2430347e383f63ad7092f406088b9b86d6d68c2a34baef51",
+  "genesis_tx": "dd9921f0ad3a86be19920cfd70c63520dcd994831cb5df30983b5b9de60f575c",
+  "genesis_block": "f40e7646b3d251766a184024ebc024035edae584e0694dc875edc9757e267af5",
 
   //heavy (enable/disable additional heavy features)
   "heavy": false,
