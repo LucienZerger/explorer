@@ -13,7 +13,8 @@
       each item in received
         - count = count + 1
         - var itemFixed = item.received / 100000000
-        tr
+        //- steal jquery data table styling
+        tr(class= count%2 === 0 ? "odd" : "even")
           td(style='text-align:center;') 
             =count
           td

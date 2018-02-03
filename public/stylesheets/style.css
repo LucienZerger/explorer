@@ -1,7 +1,9 @@
 body {
   padding: 80px 40px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
- /* background-image: url('/images/background2.png');*/
+  background: linear-gradient(rgba(30, 30, 40, 0.8), 
+							rgba(30, 30, 40, 0.8)),
+							url('/images/background3.png');
 }
 
 #index-search {
@@ -164,3 +166,13 @@ tr {
 	bottom: 0px;
 }
 
+.tinnie::before {
+	content: "\00A0\00A0\00A0";
+	background: url("../images/strayacoin.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.even {
+	background-color: #485563;
+}

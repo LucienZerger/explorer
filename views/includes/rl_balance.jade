@@ -15,7 +15,8 @@
         - count = count + 1
         - var itemFixed = item.balance / 100000000
         - var percentage = (itemFixed / stats.supply) * 100
-        tr
+        //- steal jquery data table styling
+        tr(class= count%2 === 0 ? "odd" : "even")
           td(style='text-align:center;') 
             =count
           td 
